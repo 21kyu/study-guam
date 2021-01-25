@@ -34,7 +34,7 @@ TDD, Unit test, OOP, Refactoring
 ```
 2. CI 구성과 도커라이징
 ```
-Jenkins, Github Action, Container, Container repository, Docker, Jib, Build pipeline, Scanning & Hardening & Testing
+Github Action, Container, Container repository, Docker, Jib, Build pipeline, Scanning & Hardening & Testing
 ```
 3. Cloud 환경에 맞게 체계화. [Twelve-Factor](https://12factor.net/) 방법론 적용
 ```
@@ -47,4 +47,5 @@ Graceful shutdown, Probes, Lifecycle hook
 5. To Be Continued..
 
 ## 함께 해요!
+큰 부담없도록 긴 주기로 단계별 진행할 예정입니다. 구성원들 간의 지식이 다를 수 있으므로 단계가 넘어가기 전에 핵심 키워드들에 대해서 충분히 공부할 시간을 가질 것 입니다. 원하면 공유도 하구요. 소규모로 진행할거라서 타인이 올린 PR을 모두가 배운다는 마음으로 검토해주면 좋겠습니다. 개발적인 부분이 집중되지 않는 스터디이기도 하고 해서, 충분히 예상되지만.. 일정 수 이상 같이하실 분이 없다면 해당 Repo는 소리소문없이 삭제할 예정입니다.
 [스터디 함께 하실 분 코멘트 남겨주세요!](https://github.com/21kyu/study-guam/issues/1)
