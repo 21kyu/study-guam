@@ -1,8 +1,8 @@
 ## 첫번째 스터디 주제입니다.
 
-꽤 널리 알려진 리팩토링 과제인 Gilded Rose를 Spring boot에 맞게 조금 수정해서 리팩토링을 해보는 걸 하려고 합니다.
+꽤 널리 알려진 리팩토링 과제인 [Gilded Rose](https://github.com/emilybache/GildedRose-Refactoring-Kata)를 Spring boot에 맞게 조금 수정해서 리팩토링을 해보는 걸 하려고 합니다.
 저도 이렇게는 해보지 않아서 잘 될지 걱정이긴 하네요.
-https://github.com/emilybache/GildedRose-Refactoring-Kata
+
 
 이 주제는 맛보기이며, 참여는 자율이에요. 우선 스터디를 시작하기 전에 한번쯤 해보면 도움이 될 것 같아서 추천드릴 겸 해보려고 해요.
 
@@ -15,7 +15,7 @@ https://github.com/emilybache/GildedRose-Refactoring-Kata
 3. 수정 사항을 저기 3개의 commit 순서에 맞게 나누어 push 해주세요.
 4. main 브랜치로 PR 생성해주시면 됩니다.
 
-다른 분들의 저장소로 가서 참고하셔도 좋구요, 타인의 PR을 서로 리뷰하면 더 좋을 것 같긴해요.
+[다른 분들의 저장소](https://github.com/21kyu/study-guam/network/members)로 가서 참고하셔도 좋구요, 타인의 PR을 서로 리뷰하면 더 좋을 것 같긴해요.
 저도 처음이라 뭐가 좋을지는 잘 모르겠지만, Spring boot나 git 사용법이 익숙하지 않으실 수도 있고, 단위 테스트가 처음이신 분도 계실 것 같아요.
 **궁금한 사항이 있으시면 언제든 말씀해주세요!**
 
