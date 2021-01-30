@@ -8,6 +8,11 @@
 
 테스트 코드는 프로젝트 전체의 부수 효과 발생 확률을 줄여주며, 개발자 뿐만 아니라 devops 측면에서도 테스트 단계는 빠질 수 없으니 꼭 필요한 부분이라고 생각해요.
 
+### 개발 환경
+* java 11 (필요하다면 8버전으로 build.gradle 변경해서 사용해주세요)
+* gradle
+* lombok 사용을 위한 설정 (intelliJ라면 Setting에서 Enable annotation processing 활성)
+
 ### 진행은 아래와 같이 해주시면 될 것 같습니다.
 
 1. 해당 레포의 우상단 Fork 버튼을 통해 자신의 저장소로 Fork
