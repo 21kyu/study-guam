@@ -156,4 +156,19 @@ class GildedRoseServiceTest {
         gildedRoseService.updateQuality();
         assertEquals(0, items.get(0).getQuality());
     }
+
+    @Test
+    void conjured_item() {
+        List<Item> items = new ArrayList<>();
+        Item foo = Item.builder()
+                .name("Conjured")
+                .sellIn(12)
+                .quality(20)
+                .build();
+        items.add(foo);
+
+        when(itemRepository.findAll()).thenReturn(items);
+        gildedRoseService.updateQuality();
+        assertEquals(18, items.get(0).getQuality());
+    }
 }

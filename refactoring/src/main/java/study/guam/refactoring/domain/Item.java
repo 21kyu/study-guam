@@ -14,6 +14,7 @@ public class Item {
     public static final String AGED_BRIE = "Aged Brie";
     public static final String BACKSTAGE_PASSES = "Backstage passes to a TAFKAL80ETC concert";
     public static final String SULFURAS = "Sulfuras, Hand of Ragnaros";
+    public static final String CONJURED = "Conjured";
     public static final int MAX_QUALITY = 50;
     public static final int FAR_FROM_EXPIRY = 11;
     public static final int CLOSE_TO_EXPIRY = 6;
@@ -38,8 +39,8 @@ public class Item {
 
     public void updateQuality() {
         if (!this.name.equals(AGED_BRIE) && !this.name.equals(BACKSTAGE_PASSES)) {
-                this.decreaseQualityIfItemHasQuality();
-            } else {
+            this.decreaseQualityIfItemHasQuality();
+        } else {
             this.increaseQualityIncludingBackstagePasses();
         }
     }
@@ -47,12 +48,19 @@ public class Item {
     public void decreaseQualityIfItemHasQuality() {
         if (this.quality > 0) {
             this.decreaseQuality();
+            this.decreaseQualityOfConjured();
         }
     }
 
     public void decreaseQuality() {
         if (!this.name.equals(SULFURAS)) {
             this.quality--;
+        }
+    }
+
+    public void decreaseQualityOfConjured() {
+        if (this.name.equals(CONJURED)) {
+            this.decreaseQuality();
         }
     }
 
