@@ -57,9 +57,7 @@ updateQuality 함수를 자유롭게 변경하고 필요하다면 새로운 코�
 1. 시스템이 동작하는 모든 로직을 테스트할 수 있는 단위 테스트를 작성하세요.
 2. updateQuality 함수를 자유롭게 리팩토링합니다. 단, updateQuality 함수 자체는 아래와 같은 형태로 존재해야 합니다. 다형성 등의 도움을 받아 진행해주세요.
 ```java
-public void updateQuality() {
-    List<Item> items = itemRepository.findAll();
-
+public void updateQuality(List<Item> items) {
     for (Item item : items) {
         item.updateQuality()
     }
