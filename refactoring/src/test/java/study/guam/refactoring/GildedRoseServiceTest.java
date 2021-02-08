@@ -89,6 +89,7 @@ class GildedRoseServiceTest {
     }
 
 
+
     @ParameterizedTest
     @CsvSource({"-1, 12", "0, 12", "1, 11", "2, 11"})
     void AGED_BRIE_판매기한_상관없이_퀄리티_증가(int sellIn, int dayQuality) {
