@@ -4,17 +4,13 @@ import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import study.guam.refactoring.UpdateIF;
 
-import javax.persistence.Entity;
 import javax.persistence.Id;
 
 @Getter
-@Entity
 @NoArgsConstructor
-public class Item {
-    @Id
-    private Long id;
-
+public abstract class Item {
     private String name;
 
     @Setter
@@ -23,10 +19,33 @@ public class Item {
     @Setter
     private int quality;
 
-    @Builder
-    public Item(String name, int sellIn, int quality) {
+    @Setter
+    private UpdateIF updateIF;
+
+    public Item(String name, int sellIn, int quality,UpdateIF updateIF) {
         this.name = name;
         this.sellIn = sellIn;
         this.quality = quality;
+        this.updateIF = updateIF;
+    }
+
+    public void updateQuality() {
+        updateIF.updateQuality(this);
+    }
+
+    public void minusQuality(int num){
+        if(this.quality > 0){
+            this.quality -= num;
+        }
+    }
+
+    public void plusQuality(int num){
+        if(this.quality < 50){
+            this.quality += num;
+        }
+    }
+
+    public void minusSellIn(){
+        this.sellIn -= 1;
     }
 }
