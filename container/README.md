@@ -5,6 +5,7 @@ Spring boot 애플리케이션을 컨테이너화해서 실행하는 것을 목�
 
 컨테이너화된 서비스는 마이크로서비스를 보다 쉽게 가능케하며 클라우드 네이티브 애플리케이션의 기반을 이룬다고 합니다.
 **클라우드 네이티브 애플리케이션 개발**이란 도대체 무엇인지, Redhat에서 짤막하게 소개해준 영상이 있어 공유합니다.
+
 [![클라우드 네이티브 애플리케이션 개발은 무엇일까요?](https://i.ytimg.com/vi/ieIgUDlNF3g/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLCdI6fcAiCIyVKIw8Yl1g1rVSEX6w)](https://youtu.be/ieIgUDlNF3g)
 
 이렇듯 너도 나도 컨테이너를 이야기하고 사용하는, 현 시점에서 대세인 컨테이너에 대해 확실히 짚고 넘어가면 좋을 것 같아서 공부하는 시간을 가져보고자 합니다.
