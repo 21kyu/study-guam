@@ -7,7 +7,7 @@ Dockerfile과 docker-compose.yml을 만들어서 컨테이너화된 애플리케
 cd containerization/react-redux-realworld-example-app
 npm install
 docker build -t react:dev .
-docker run -it --rm -v ${PWD}:/app -v /app/node_modules -p 3000:4001 react:dev
+docker run -it --rm -v ${PWD}:/app -v /app/node_modules -p 3000:4100 react:dev
 # 브라우저에서 localhost:3000 url 확인
 # API 서버로 localhost:8080을 바라보고 있어서 Spring 서버가 실행되고 있지 않다면 Error 화면이 뜸
 ```
