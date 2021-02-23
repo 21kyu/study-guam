@@ -2,7 +2,17 @@
 
 Dockerfile과 docker-compose.yml을 만들어서 컨테이너화된 애플리케이션을 실행해보고자 합니다.
 
-### A) Dockerfile 만들기
+* 간단한 react container 사용 방법, 추가로 수정하셔서 사용하셔도 됩니다.
+```shell
+cd containerization/react-redux-realworld-example-app
+npm install
+docker build -t react:dev .
+docker run -it --rm -v ${PWD}:/app -v /app/node_modules -p 3000:4001 react:dev
+# 브라우저에서 localhost:3000 url 확인
+# API 서버로 localhost:8080을 바라보고 있어서 Spring 서버가 실행되고 있지 않다면 Error 화면이 뜸
+```
+
+### A) Spring 서버용 Dockerfile 만들기
 1. `spring-boot-realworld-example-app`을 위한 Dockerfile을 작성
 2. docker build: 이미지 생성
 3. docker run: 컨테이너 실행, 동작 확인
