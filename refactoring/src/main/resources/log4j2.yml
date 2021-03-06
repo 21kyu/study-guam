@@ -1,0 +1,31 @@
+#Configuration:
+#  status: info
+#  name: Default
+#
+#  properties:
+#    property:
+#    - name: log-path
+#      value: "logs"
+#    - name: layoutPattern
+#      value: "%style{%d{yyyy/MM/dd HH:mm:ss,SSS}}{cyan} %highlight{[%-5p]}{FATAL=bg_red, ERROR=red,
+#                          INFO=green, DEBUG=blue}  [%C] %style{[%t]}{yellow}- %m%n -"
+#    - name: layoutPattern2
+#      value: "[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %c{1} - %msg%n"
+#  appenders:
+#    Console:
+#      name: STDOUT
+#      target: SYSTEM_OUT
+#      PatternLayout:
+#        pattern: ${layoutPattern2}
+#        #Pattern: "%m%n"
+#      Filters:
+#        ThresholdFilter:
+#          level: info
+#    File:
+#      name: File
+#      fileName: ${filename}
+#      PatternLayout:
+#        Pattern: "%d %p %C{1.} [%t] %m%n"
+#      Filters:
+#        ThresholdFilter:
+#          level: error

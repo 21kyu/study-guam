@@ -1,0 +1,27 @@
+version: '3.7'
+services:
+  mysql:
+    image: mysql:5.7
+    restart: always
+    ports:
+      - "3306:3306"
+    environment:
+      - MYSQL_DATABASE=database
+      - MYSQL_ROOT_PASSWORD=password
+      - TZ=Asia/Seoul
+    volumes:
+      - ./volume:/var/lib/mysql
+  boot:
+    build:
+      context: ./spring-boot-realworld-example-app
+      dockerfile: ./Dockerfile
+    ports:
+      - "8080:8080"
+  react:
+    build:
+      context: ./react-redux-realworld-example-app
+      dockerfile: ./Dockerfile
+    ports:
+      - "3000:4100"
+    volumes:
+      - ./react-redux-realworld-example-app:/app
