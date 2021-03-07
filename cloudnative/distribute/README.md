@@ -1,7 +1,7 @@
 # Distribute
 
 보통 Distribute 단계는 이미지 정의 및 사양을 이용해 컨테이너 이미지를 빌드하고 애플리케이션의 결함을 식별하기 위한 체계적인 테스트들로 구성되는데,
-Cloud Native 보안 백서에 따르면 이미지 빌드 시 오픈 소스 및 재사용 가능한 패키지 채택으로 인한 취약점들 또한 컨테이너 이미지에 포함될 수 있으므로 이미지의 무결성을 검증하는 거소가 같은 보안 단계를 통합하는 것이 중요하다고 합니다.
+Cloud Native 보안 백서에 따르면 이미지 빌드 시 오픈 소스 및 재사용 가능한 패키지 채택으로 인한 취약점들 또한 컨테이너 이미지에 포함될 수 있으므로 이미지의 무결성을 검증하는 것과 같은 보안 단계를 통합하는 것이 중요하다고 합니다.
 
 ![image](https://github.com/cncf/sig-security/blob/master/security-whitepaper/RackMultipart20201111_figure3.png?raw=true)
 
